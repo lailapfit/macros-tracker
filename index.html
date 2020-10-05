@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>The Mark Carroll Challenge - Macros</title>
+  <meta name="description" content="The Mark Carroll Challenge - Macros">
+  <link rel="stylesheet" href="https://unpkg.com/formiojs@latest/dist/formio.full.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./src/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="margin-sm">The Challenge by Mark Carroll V3 - Macros Diary</h1>
+    </header>
+    <button type="button" class="btn btn-primary margin-sm" data-toggle="modal" data-target="#trackMacros__modal">UPDATE YOUR MACROS</button>
+    <div id="macros-dataTable__wrapper">
+        <table id="datatable-macros" class="display" style="width:100%">
+            <thead>
+                <tr>
+                    <th>Monthly/Weekly</th>
+                    <th>Weight</th>
+                    <th>TDEE</th>
+                    <th>Deficit/Surplus</th>
+                    <th>Protein</th>
+                    <th>Fats</th>
+                    <th>Carbs</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="trackMacros__modal" tabindex="-1" role="dialog" aria-labelledby="trackMacros__modal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="trackMacros__modal-label">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div id="track-macros__formio-form"></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
+    <script src="https://unpkg.com/formiojs@latest/dist/formio.full.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+    <script type="module" src="/src/scripts.js"></script>
+</body>
+</html>
